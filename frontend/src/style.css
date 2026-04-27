@@ -1,0 +1,175 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fff5f5, #ffe6e6);
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #ff4d4d, #ff1a1a);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  width: 220px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 5px rgba(255,77,77,0.5);
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff4d4d, #ff1a1a);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #cc0000;
+}
+
+/* Pizza Cards */
+.pizza-card {
+  background: white;
+  padding: 15px;
+  margin: 20px;
+  width: 260px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.pizza-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+img {
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Cart */
+h3 {
+  color: #ff1a1a;
+}
+.container {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ff4d4d;
+  padding: 15px 30px;
+  color: white;
+}
+
+.navbar button {
+  margin-left: 10px;
+}
+.hero {
+  background: url("https://images.unsplash.com/photo-1601924582975-7e33c9c67a1b");
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px;
+}
+.pizza-card {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.pizza-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.pizza-card img {
+  transition: 0.3s;
+}
+
+.pizza-card:hover img {
+  transform: scale(1.1);
+}
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+}
+.container {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
